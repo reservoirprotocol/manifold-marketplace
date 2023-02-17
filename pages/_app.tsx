@@ -143,7 +143,7 @@ function MyApp({
             //CONFIGURABLE: Override any configuration available in RK: https://docs.reservoir.tools/docs/reservoirkit-ui#configuring-reservoirkit-ui
             // Note that you should at the very least configure the source with your own domain
             apiBase: `${baseUrl}${marketplaceChain.proxyApi}`,
-            // source: 'YOUR_DOMAIN',
+            source: 'manifold.reservoir.market',
             normalizeRoyalties: NORMALIZE_ROYALTIES,
           }}
           theme={reservoirKitTheme}
