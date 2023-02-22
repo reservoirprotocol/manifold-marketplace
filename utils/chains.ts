@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import { mainnet, Chain } from 'wagmi/chains'
+=======
+import { constants } from 'ethers'
+import { mainnet } from 'wagmi/chains'
+>>>>>>> 382da30 (resolve conflicts)
 
 //CONFIGURABLE: The default export controls the supported chains for the marketplace. Removing
 // or adding chains will result in adding more or less chains to the marketplace.
