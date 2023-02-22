@@ -43,7 +43,12 @@ class MyDocument extends Document {
         <meta name="twitter:title" content="Manifold" />
         <meta name="twitter:description" content={description} />
 
+<<<<<<< HEAD
         {/* OG Tags - https://ogp.me/ */}
+=======
+        {/* OG - https://ogp.me/ */}
+        {/* https://www.opengraph.xyz/ */}
+>>>>>>> 7cc5fe9 (Initial configuration)
         <meta name="og:title" content="Manifold" />
         <meta property="og:type" content="website" />
         <meta property="og:determiner" content="the" />
@@ -56,7 +61,11 @@ class MyDocument extends Document {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Reservoir Market Banner" />
 
+<<<<<<< HEAD
         {/* CONFIGURABLE: Reservoir meta tags can be configured to your application, learn more here: https://docs.reservoir.tools/docs/reservoir-meta-tags */}
+=======
+        {/* Reservoir Meta Tags: https://docs.reservoir.tools/docs/reservoir-meta-tags */}
+>>>>>>> 7cc5fe9 (Initial configuration)
         <meta property="reservoir:title" content="Manifold" />
         <meta property="reservoir:icon" content="/reservoir-source-icon.png" />
         <meta
