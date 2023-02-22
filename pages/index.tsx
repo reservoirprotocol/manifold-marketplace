@@ -6,10 +6,8 @@ import { ComponentPropsWithoutRef, useEffect, useRef, useState } from 'react'
 import TrendingCollectionsTimeToggle, {
   CollectionsSortingOption,
 } from 'components/home/TrendingCollectionsTimeToggle'
-import { Footer } from 'components/home/Footer'
 import { useMediaQuery } from 'react-responsive'
 import { useMarketplaceChain, useMounted } from 'hooks'
-import { useAccount } from 'wagmi'
 import LoadingSpinner from 'components/common/LoadingSpinner'
 import { paths } from '@reservoir0x/reservoir-sdk'
 import { useCollections } from '@reservoir0x/reservoir-kit-ui'
@@ -27,7 +25,6 @@ const IndexPage: NextPage<Props> = ({ ssr }) => {
   const [sortByTime, setSortByTime] =
     useState<CollectionsSortingOption>('1DayVolume')
   const marketplaceChain = useMarketplaceChain()
-  const { isDisconnected } = useAccount()
 
   let collectionQuery: Parameters<typeof useCollections>['0'] = {
     limit: 12,
@@ -88,27 +85,6 @@ const IndexPage: NextPage<Props> = ({ ssr }) => {
           },
         }}
       >
-        {isDisconnected && (
-          <Flex
-            direction="column"
-            align="center"
-            css={{ mx: 'auto', maxWidth: 728, pt: '$5', textAlign: 'center' }}
-          >
-            <Text style="h3" css={{ mb: 24 }}>
-              Open Source Marketplace
-            </Text>
-            <Text style="body1" css={{ mb: 48 }}>
-              Reservoir Marketplace is an open-source project that showcases the
-              latest and greatest features of the Reservoir Platform.
-            </Text>
-            <a
-              href="https://github.com/reservoirprotocol/marketplace-v2"
-              target="_blank"
-            >
-              <Button color="gray3">View Source Code</Button>
-            </a>
-          </Flex>
-        )}
         <Flex css={{ my: '$6', gap: 65 }} direction="column">
           <Flex
             justify="between"
@@ -163,7 +139,6 @@ const IndexPage: NextPage<Props> = ({ ssr }) => {
           )}
           {!showViewAllButton && <Box ref={loadMoreRef}></Box>}
         </Flex>
-        <Footer />
       </Box>
     </Layout>
   )
