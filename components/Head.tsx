@@ -15,7 +15,7 @@ type Props = {
  */
 export const Head: FC<Props> = ({
   ogImage = 'https://marketplace.reservoir.tools/og-image.png',
-  title = 'Manifold Marketplace',
+  title,
   description = 'Manifold',
 }) => {
   return (
@@ -24,7 +24,7 @@ export const Head: FC<Props> = ({
       {/* CONFIGURABLE: There are also keywords in pages/_document.ts that you can also configure to fit your application */}
 
       {/* Title */}
-      <title>{title}</title>
+      <title>{title ? `Manifold - ${title}` : 'Manifold'}</title>
 
       {/* Meta tags */}
       <meta name="description" content={description} />
