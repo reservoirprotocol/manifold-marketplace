@@ -15,9 +15,13 @@ class MyDocument extends Document {
 
   render() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     const description = 'Manifold'
 >>>>>>> 382da30 (resolve conflicts)
+=======
+    const description = 'Manifold'
+>>>>>>> 27b9acf (resolve conflicts)
     return (
       <Html>
         <Head>
