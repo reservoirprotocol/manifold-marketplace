@@ -40,10 +40,7 @@ class MyDocument extends Document {
 
         {/* CONFIGURABLE: Reservoir meta tags can be configured to your application, learn more here: https://docs.reservoir.tools/docs/reservoir-meta-tags */}
         <meta property="reservoir:title" content="Manifold" />
-        <meta
-          property="reservoir:icon"
-          content="https://manifold.xyz/assets/manifold-favicon.23612492.svg"
-        />
+        <meta property="reservoir:icon" content="/manifold-source-logo.png" />
         <meta
           property="reservoir:token-url-mainnet"
           content="/collection/ethereum/${contract}/${tokenId}"
