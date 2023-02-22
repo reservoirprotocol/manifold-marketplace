@@ -151,7 +151,7 @@ function MyApp({
                 default: marketplaceChain.id === id,
               }
             }),
-            // source: 'YOUR_DOMAIN',
+            source: 'manifold.reservoir.market',
             normalizeRoyalties: NORMALIZE_ROYALTIES,
           }}
           theme={reservoirKitTheme}

@@ -60,7 +60,10 @@ const Navbar = () => {
         <Flex align="center">
           <Link href="/">
             <Box css={{ width: 34, cursor: 'pointer' }}>
-              <img src="/reservoirLogo.svg" style={{ width: '100%' }} />
+              <img
+                src="https://manifold.xyz/assets/manifold-logograph.96588521.svg"
+                style={{ width: '100%' }}
+              />
             </Box>
           </Link>
         </Flex>
@@ -94,15 +97,24 @@ const Navbar = () => {
       <Box css={{ flex: 1 }}>
         <Flex align="center">
           <Link href="/">
-            <Box css={{ width: 112, cursor: 'pointer' }}>
-              {theme == 'dark' ? (
-                <img src="/reservoirMarketLogo.svg" style={{ width: '100%' }} />
-              ) : (
-                <img
-                  src="/reservoirMarketLogoLight.svg"
-                  style={{ width: '100%' }}
-                />
-              )}
+            <Box css={{ cursor: 'pointer' }}>
+              <svg
+                fill={theme === 'dark' ? 'white' : 'black'}
+                width="41"
+                height="20"
+                viewBox="0 0 41 20"
+                xmlns="http://www.w3.org/2000/svg"
+                data-v-0c74727b=""
+              >
+                <path
+                  d="M0 0.00173111L6.62391 6.62564L40.5525 6.62391L33.9286 0L0 0.00173111Z"
+                  data-v-0c74727b=""
+                ></path>
+                <path
+                  d="M26.6331 16.079H31.0468L40.4979 6.62789H30.147L23.6645 13.1104L20.5191 9.96492H10.1682L19.6192 19.416H29.9701L26.6331 16.079Z"
+                  data-v-0c74727b=""
+                ></path>
+              </svg>
             </Box>
           </Link>
           <Box css={{ flex: 1, px: '$5', maxWidth: 460 }}>
