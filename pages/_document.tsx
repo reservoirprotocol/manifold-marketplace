@@ -55,11 +55,11 @@ class MyDocument extends Document {
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Reservoir Market Banner" />
+        <meta property="og:image:alt" content="Manifold Market Banner" />
 
         {/* Reservoir Meta Tags: https://docs.reservoir.tools/docs/reservoir-meta-tags */}
         <meta property="reservoir:title" content="Manifold" />
-        <meta property="reservoir:icon" content="/reservoir-source-icon.png" />
+        <meta property="reservoir:icon" content="/manifold-source-logo.png" />
         <meta
           property="reservoir:token-url-mainnet"
           content="/collection/ethereum/${contract}/${tokenId}"
