@@ -1,19 +1,9 @@
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import { Text, Flex, Box, Button } from 'components/primitives'
 import Layout from 'components/Layout'
-<<<<<<< HEAD
 import { ComponentPropsWithoutRef, useContext, useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { useMarketplaceChain, useMounted } from 'hooks'
-=======
-import { ComponentPropsWithoutRef, useEffect, useRef, useState } from 'react'
-import TrendingCollectionsTimeToggle, {
-  CollectionsSortingOption,
-} from 'components/home/TrendingCollectionsTimeToggle'
-import { useMediaQuery } from 'react-responsive'
-import { useMarketplaceChain, useMounted } from 'hooks'
-import LoadingSpinner from 'components/common/LoadingSpinner'
->>>>>>> 382da30 (resolve conflicts)
 import { paths } from '@reservoir0x/reservoir-sdk'
 import { useCollections } from '@reservoir0x/reservoir-kit-ui'
 import fetcher from 'utils/fetcher'
