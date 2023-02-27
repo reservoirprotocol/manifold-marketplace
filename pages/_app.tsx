@@ -123,7 +123,6 @@ function MyApp({
           options={{
             //CONFIGURABLE: Override any configuration available in RK: https://docs.reservoir.tools/docs/reservoirkit-ui#configuring-reservoirkit-ui
             // Note that you should at the very least configure the source with your own domain
-<<<<<<< HEAD
             chains: supportedChains.map(({ proxyApi, id }) => {
               return {
                 id,
@@ -131,9 +130,6 @@ function MyApp({
                 default: marketplaceChain.id === id,
               }
             }),
-=======
-            apiBase: `${baseUrl}${marketplaceChain.proxyApi}`,
->>>>>>> 7cc5fe9 (Initial configuration)
             source: 'manifold.reservoir.market',
             normalizeRoyalties: NORMALIZE_ROYALTIES,
           }}
