@@ -57,7 +57,7 @@ class MyDocument extends Document {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Manifold Market Banner" />
 
-        {/* CONFIGURABLE: Reservoir meta tags can be configured to your application, learn more here: https://docs.reservoir.tools/docs/reservoir-meta-tags */}
+        {/* Reservoir Meta Tags: https://docs.reservoir.tools/docs/reservoir-meta-tags */}
         <meta property="reservoir:title" content="Manifold" />
         <meta property="reservoir:icon" content="/manifold-source-logo.png" />
         <meta
