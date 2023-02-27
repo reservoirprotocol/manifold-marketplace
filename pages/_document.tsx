@@ -35,23 +35,18 @@ class MyDocument extends Document {
         <link
           rel="shortcut icon"
           type="image/svg"
-          href="https://marketplace.reservoir.tools/reservoir.svg"
+          href="https://manifold.xyz/assets/manifold-favicon.23612492.svg"
         />
 
         {/* Reservoir meta tags */}
-        <meta property="reservoir:title" content="Reservoir Market" />
-        <meta property="reservoir:icon" content="/reservoir-source-icon.png" />
+        <meta property="reservoir:title" content="Manifold" />
+        <meta
+          property="reservoir:icon"
+          content="https://manifold.xyz/assets/manifold-favicon.23612492.svg"
+        />
         <meta
           property="reservoir:token-url-mainnet"
           content="/collection/ethereum/${contract}/${tokenId}"
-        />
-        <meta
-          property="reservoir:token-url-goerli"
-          content="/collection/goerli/${contract}/${tokenId}"
-        />
-        <meta
-          property="reservoir:token-url-polygon"
-          content="/collection/polygon/${contract}/${tokenId}"
         />
         <body>
           <Main />

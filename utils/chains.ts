@@ -1,4 +1,4 @@
-import { arbitrum, goerli, mainnet, polygon, Chain } from 'wagmi/chains'
+import { mainnet, Chain } from 'wagmi/chains'
 
 //CONFIGURABLE: The default export controls the supported chains for the marketplace. Removing
 // or adding chains will result in adding more or less chains to the marketplace.
@@ -44,41 +44,4 @@ export const DefaultChain: ReservoirChain = {
   community: process.env.NEXT_PUBLIC_ETH_COMMUNITY,
 }
 
-export default [
-  DefaultChain,
-  {
-    ...polygon,
-    lightIconUrl: '/icons/polygon-icon-dark.svg',
-    darkIconUrl: '/icons/polygon-icon-light.svg',
-    reservoirBaseUrl: 'https://api-polygon.reservoir.tools',
-    proxyApi: '/api/reservoir/polygon',
-    routePrefix: 'polygon',
-    apiKey: process.env.POLYGON_RESERVOIR_API_KEY,
-    coingeckoId: 'matic-network',
-    collectionSetId: process.env.NEXT_PUBLIC_POLYGON_COLLECTION_SET_ID,
-    community: process.env.NEXT_PUBLIC_POLYGON_COMMUNITY,
-  },
-  {
-    ...arbitrum,
-    name: 'Arbitrum',
-    lightIconUrl: '/icons/arbitrum-icon-dark.svg',
-    darkIconUrl: '/icons/arbitrum-icon-light.svg',
-    reservoirBaseUrl: 'https://api-arbitrum.reservoir.tools',
-    proxyApi: '/api/reservoir/arbitrum',
-    routePrefix: 'arbitrum',
-    apiKey: process.env.ARBITRUM_RESERVOIR_API_KEY,
-    coingeckoId: 'arbitrum-iou',
-  },
-  {
-    ...goerli,
-    lightIconUrl: '/icons/goerli-icon-dark.svg',
-    darkIconUrl: '/icons/goerli-icon-light.svg',
-    reservoirBaseUrl: 'https://api-goerli.reservoir.tools',
-    proxyApi: '/api/reservoir/goerli',
-    routePrefix: 'goerli',
-    apiKey: process.env.GOERLI_RESERVOIR_API_KEY,
-    coingeckoId: 'goerli-eth',
-    collectionSetId: process.env.NEXT_PUBLIC_GOERLI_COMMUNITY,
-    community: process.env.NEXT_PUBLIC_GOERLI_COMMUNITY,
-  },
-] as ReservoirChain[]
+export default [DefaultChain]
