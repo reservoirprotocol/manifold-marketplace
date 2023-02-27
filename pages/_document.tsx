@@ -43,8 +43,7 @@ class MyDocument extends Document {
         <meta name="twitter:title" content="Manifold" />
         <meta name="twitter:description" content={description} />
 
-        {/* OG - https://ogp.me/ */}
-        {/* https://www.opengraph.xyz/ */}
+        {/* OG Tags - https://ogp.me/ */}
         <meta name="og:title" content="Manifold" />
         <meta property="og:type" content="website" />
         <meta property="og:determiner" content="the" />
